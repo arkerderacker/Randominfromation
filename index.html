@@ -32,7 +32,33 @@ document.body.appendChild(menu);
 
 <img src="https://ik.imagekit.io/Markuss/IMG_0927.png?updatedAt=1758875096659" 
      style="filter:grayscale(100%); width:100px; height:100px;"/>
+<button id="modeToggle">Switch to Dark Mode</button>
+<style>
+  body {
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+  }
 
+  body.dark-mode {
+    background-color: black;
+    color: white;
+  }
+</style>
+<script>
+  const button = document.getElementById("modeToggle");
+
+  button.addEventListener("click", function() {
+    document.body.classList.toggle("dark-mode"); // toggles dark-mode class
+
+    // Change button text depending on mode
+    if (document.body.classList.contains("dark-mode")) {
+      button.innerText = "Switch to Light Mode";
+    } else {
+      button.innerText = "Switch to Dark Mode";
+    }
+  });
+</script>
 <p style="margin:0; padding:0;">hyp = hypotenuse which is the longest side of the triangle</p>
 <p style="margin:0; padding:0;">adj = adjacent which is always near the ø </p>
 <p style="margin:0; padding:0;">opp = opposite which is the last side of the triangle</p>
