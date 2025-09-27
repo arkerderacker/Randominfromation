@@ -88,5 +88,25 @@ style="margin:0; padding:0;"/>
 <p>there are 2 types of porportion, inverse and direct</p>
 <p>for example, y is inversly porportional to x, y = k ÷ x which is the same as x * y = k </p>
 <p>while if y is directly porportional to x, it will be y = k * x which is the same as y ÷ x = k</p>
+<p style="margin:0; padding:0;">let's try this question</p>
+<p style="margin:0; padding:0;">jack had x bananas and y apples. x is directly porportional to y.y = 12 when x = 4. </p>
+<p style="margin:0; padding:0;">find a formula of y in terms of x(use lower case y with lower case x) e.g y = kx</p>
+<script>
+let input = document.createElement("input");
+input.type = "text";
+input.placeholder = "enter answer";
+let enter = document.createElement("button");
+enter.innerText = "submit";
+enter.onclick = function () {
+    if(input.value == "y = 3x") {
+        input.style.backgroundColor = "lightgreen";
+        alert("CORRECT!!!");
+    }else {
+        alert("try again");
+    }
+};
+document.body.appendChild(input)
+document.body.appendChild(enter)
+</script>
 </body>
 </html>
