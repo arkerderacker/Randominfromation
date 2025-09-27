@@ -110,5 +110,25 @@ enter.onclick = function () {
 document.body.appendChild(input)
 document.body.appendChild(enter)
 </script>
+<p style="margin:0; padding:0;">now what if it was inverse instead? let divide be /</p>
+<script>
+let input2 = document.createElement("input");
+input2.type = "text";
+input2.placeholder = "enter answer";
+let enter2 = document.createElement("button");
+enter2.innerText = "submit";
+enter2.onclick = function () {
+    if(input2.value == "y = 48/x") {
+        input2.style.backgroundColor = "lightgreen";
+        input2.disabled = true;
+      enter2.disabled = true;
+      alert("CORRECT!!!");
+    }else {
+        alert("try again");
+    }
+};
+document.body.appendChild(input2)
+document.body.appendChild(enter2)  
+</script>
 </body>
 </html>
