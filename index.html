@@ -100,7 +100,9 @@ enter.innerText = "submit";
 enter.onclick = function () {
     if(input.value == "y = 3x") {
         input.style.backgroundColor = "lightgreen";
-        alert("CORRECT!!!");
+        input.diasabled = true;
+      enter.disabled = true;
+      alert("CORRECT!!!");
     }else {
         alert("try again");
     }
